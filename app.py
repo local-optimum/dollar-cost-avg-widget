@@ -37,7 +37,6 @@ def costAverageFunc(coin, deposit, currency, frequency, startdate):
     df['price'] = round(df['price'].astype(float),2)
     df['date'] = df['date'].map(lambda x: x.date())
     df['date'] = df['date'].astype(str)
-    print(df.head())
 
     #add desposit amounts at the correct frequency
     df['deposits'] = 0.0
