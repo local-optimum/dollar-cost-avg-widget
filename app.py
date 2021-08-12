@@ -83,7 +83,7 @@ app = flask.Flask(__name__)
 #app.config["DEBUG"] = True
 
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def home():
     return '''<h1>Dollar Cost Averaging for Crypto</h1>
 <p>An API that returns the results of dollar cost averaging when investing in crypto, based on coingecko prices.
