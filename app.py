@@ -1,6 +1,5 @@
 import flask
 from flask import request, jsonify
-from coin_price_api import *
 import requests
 import datetime as dt
 import pandas as pd
