@@ -94,7 +94,9 @@ Structure API call as /dca/query?coin=INPUT&deposit=INPUT&currency=INPUT&frequen
 def api_calc():
     if ('coin' and 'deposit' and 'currency' and 'frequency' and 'startdate')in request.args:
         results = costAverageFunc(request.args['coin'], request.args['deposit'], request.args['currency'], request.args['frequency'], request.args['startdate'])
-        return jsonify(results)
+        response = jsonify(results)
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
     else:
         return "Error: incomplete query, please include coin name, deposit amount, currency, frequency and startdate."
 
