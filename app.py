@@ -99,6 +99,7 @@ def api_calc():
         return "Error: incomplete query, please include coin name, deposit amount, currency, frequency and startdate."
 
 
-app.run()
+if __name__=="__main__":
+    app.run()
 
 #http://127.0.0.1:5000/dca/query?coin=bitcoin&deposit=100&currency=usd&frequency=1&startdate=2021-01-05
