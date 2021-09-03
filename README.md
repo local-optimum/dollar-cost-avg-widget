@@ -2,7 +2,7 @@
 
 Uses coingecko to create a new API that summarises the results of dollar cost averaging a particular crypto currency over time vs a single bulk investment.
 
-This API is hosted on Heroku [here][https://dca-crypto.herokuapp.com/]
+This API is hosted on Heroku [here](https://dca-crypto.herokuapp.com/)
 
 ## Structure of the Code
 The API receives a number of inputs:
