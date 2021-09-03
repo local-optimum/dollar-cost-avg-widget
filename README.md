@@ -12,7 +12,7 @@ The API receives a number of inputs:
 * Deposit Amount
 * Frequency of Deposits
 
-The first three are used to query [CoinGecko's API][https://www.coingecko.com/api/documentations/v3?__cf_chl_jschl_tk__=pmd_JL9vjpCEnmKgHT0cXBBbq7kpJqVCCDhRMr1dSUVvHCc-1630676076-0-gqNtZGzNAeWjcnBszQhl#/] and return a dataframe of a particular crypto's price from the start date to today.
+The first three are used to query [CoinGecko's API][https://www.coingecko.com/en/api] and return a dataframe of a particular crypto's price from the start date to today.
 
 The dataframe then uses this information to calculate the user's portfolio investment value based on their dollar cost averaging parameters, as well as insights into the performance of a bulk buy taking place on the initial start date for comparison.
 
