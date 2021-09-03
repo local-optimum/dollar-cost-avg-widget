@@ -18,12 +18,10 @@ def costAverageFunc(coin, deposit, currency, frequency, startdate):
 
     #default end date
     today_date = dt.date.today()
+    
     #default interval time
     interval = "daily"
-
     days = (today_date-start_date).days
-
-    params = {"id": id, "vs_currency": vs_currency, "days": days, "interval": interval}
 
     #use above to query coingecko
 
